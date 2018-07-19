@@ -10,11 +10,11 @@ public class Java1HW3 {
 
     public static void main(String[] args) {
 
-        game1();
-        game2();
+        gameOfNumbers();
+        wordGame();
     }
 
-    static void game1() {
+    static void gameOfNumbers() {
 
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
@@ -48,7 +48,7 @@ public class Java1HW3 {
     }
 
 
-    static void game2() {
+    static void wordGame() {
         Random rand = new Random();
         Scanner sc = new Scanner(System.in);
 
