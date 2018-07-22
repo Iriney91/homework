@@ -2,8 +2,9 @@ import java.util.Arrays;
 
 /**
  * Java1. Homework2
- * @authors Irina Poberey
+ *
  * @version dated Jul 15, 2018
+ * @authors Irina Poberey
  */
 public class Java1HW2 {
 
@@ -20,7 +21,7 @@ public class Java1HW2 {
 
     }
 
-    static void arr1(){
+    static void arr1() {
 
         int[] mas1 = {0, 1, 1, 0, 0, 1, 0};
         for (int i = 0; i < mas1.length; i++) {
@@ -33,7 +34,7 @@ public class Java1HW2 {
         }
     }
 
-    static void arr2(){
+    static void arr2() {
 
         int[] mas2 = new int[8];
 
@@ -45,7 +46,7 @@ public class Java1HW2 {
         }
     }
 
-    static void arr3(){
+    static void arr3() {
 
         int[] mas3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 
@@ -58,7 +59,7 @@ public class Java1HW2 {
 
     }
 
-    static void arr4(){
+    static void arr4() {
 
         int counter = 1;
         int[][] table = new int[10][10];

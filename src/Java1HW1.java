@@ -1,9 +1,8 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 /**
  * Java1. Homework1
- * @authors Irina Poberey
+ *
  * @version dated Jul 10, 2018
+ * @authors Irina Poberey
  */
 public class Java1HW1 {
 
@@ -60,7 +59,7 @@ public class Java1HW1 {
 
         if (s < 0) {
             return true;
-        }else{
+        } else {
             return false;
         }
 

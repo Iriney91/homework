@@ -1,9 +1,11 @@
-import java . util . Scanner ;
-import java . util . Random ;
+import java.util.Scanner;
+import java.util.Random;
+
 /**
- * Java1. Homework2
- * @authors Irina Poberey
+ * Java1. Homework3
+ *
  * @version dated Jul 19, 2018
+ * @authors Irina Poberey
  */
 public class Java1HW3 {
 
@@ -61,15 +63,15 @@ public class Java1HW3 {
 
         while (true) {
             String y = sc.nextLine();
-            char [] wordsArray = words[x].toCharArray();
-            char [] yArray = y.toCharArray();
+            char[] wordsArray = words[x].toCharArray();
+            char[] yArray = y.toCharArray();
 
 
             if (words[x].equals(y)) {
                 System.out.println("Вы угадали!");
                 break;
             } else {
-                for(int i = 0, j = 0; i < wordsArray.length && j < yArray.length; i++, j++) {
+                for (int i = 0, j = 0; i < wordsArray.length && j < yArray.length; i++, j++) {
                     char z = words[x].charAt(i);
                     char v = y.charAt(j);
                     if (z == v) {
