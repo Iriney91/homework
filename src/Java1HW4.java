@@ -11,8 +11,8 @@ import java.util.Random;
 
 public class Java1HW4 {
 
-    final int SIZE = 3;
-    final int GOAL = 3;
+    final int SIZE = 5;
+    final int GOAL = 4;
     final char DOT_X = 'x';
     final char DOT_O = 'o';
     final char DOT_EMPTY = '.';
@@ -22,7 +22,6 @@ public class Java1HW4 {
 
     public static void main(String[] args) {
         new Java1HW4();
-
     }
 
     Java1HW4() {
@@ -64,37 +63,31 @@ public class Java1HW4 {
                 System.out.print(map[i][j]);
             System.out.println();
         }
-
     }
 
     void humanTurn() {
         int x, y;
-
         do {
             System.out.println("Enter X and Y (1.." + SIZE + ")^");
             x = sc.nextInt() - 1;
             y = sc.nextInt() - 1;
         } while (!isCellValid(x, y));
-
         map[x][y] = DOT_X;
     }
 
     void aiTurn() {
         int x, y;
-
         int[] point = checkDanger();
         if (point.length == 2) {
             System.out.println(Arrays.toString(point));
             map[point[0]][point[1]] = DOT_O;
             return;
         }
-
         do {
             x = rand.nextInt(SIZE);
             y = rand.nextInt(SIZE);
         } while (!isCellValid(x, y));
         map[x][y] = DOT_O;
-
     }
 
     boolean isCellValid(int x, int y) {
@@ -105,7 +98,6 @@ public class Java1HW4 {
 
     int[] checkDanger() {
         int[] point = {};
-
         int countD = 0;
         int countD2 = 0;
         for (int i = 0; i < SIZE; i++) {
@@ -136,7 +128,6 @@ public class Java1HW4 {
                     }
                 }
             }
-
             if (map[i][i] == DOT_X) {
                 countD++;
                 if (countD == 2) {
@@ -148,7 +139,6 @@ public class Java1HW4 {
                     }
                 }
             }
-
             if (map[i][SIZE - i - 1] == DOT_X) {
                 countD2++;
                 if (countD2 == 2) {
@@ -161,7 +151,6 @@ public class Java1HW4 {
                 }
             }
         }
-
         return point;
     }
 
@@ -186,14 +175,12 @@ public class Java1HW4 {
                     }
                 }
             }
-
             if (map[i][i] == dot) {
                 countD++;
                 if (countD == GOAL) {
                     return true;
                 }
             }
-
             if (map[i][SIZE - i - 1] == dot) {
                 countD2++;
                 if (countD2 == GOAL) {
@@ -201,7 +188,6 @@ public class Java1HW4 {
                 }
             }
         }
-
         return false;
     }
 
