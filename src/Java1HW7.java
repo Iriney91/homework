@@ -1,5 +1,9 @@
 /**
- * Created by Irina on 02.08.2018.
+ * Java1. Homework7
+ *
+ * @authors Irina Poberey
+ * @version dated Aug 3, 2018
+ * @link https://github.com/Iriney91
  */
 public class Java1HW7 {
     public static void main(String[] args) {
