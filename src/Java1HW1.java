@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Java1. Homework1
  *
@@ -18,12 +20,33 @@ public class Java1HW1 {
 
     public static void main(String[] args) {
 
-        System.out.println(exe1(1, 2, 8, 4));
-        System.out.println(exe2(5, 7));
-        exe3(5);
-        System.out.println(exe4(-3));
-        exe5("Ира");
-        exe6(100);
+        int[] array = {1, 5, 7, 3, 8, 7, 4, 2, 7, 9};
+        int size = array.length;
+        int p;
+        int item = 7;
+
+        for (int i = 0; i < size; i++) {
+
+            if (array[i] == item && i < size-1) {
+                i++;
+                p = 1;
+                while (!(array[i] == item) && i < size-1) {
+                    array[i - p] = array[i];
+                    i++;
+                }
+                p++;
+
+            }
+        }
+        System.out.println(Arrays.toString(array));
+
+
+       // System.out.println(exe1(1, 2, 8, 4));
+       // System.out.println(exe2(5, 7));
+        //exe3(5);
+        //System.out.println(exe4(-3));
+        //exe5("Ира");
+        //exe6(100);
 
     }
 
